@@ -1,2 +1,2 @@
-# MyTerraformCode
-This repo contains my terraform scripts
+# MyTerraformCodes
+This repo contains my terraform codes
