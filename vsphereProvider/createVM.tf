@@ -36,10 +36,9 @@ data "vsphere_virtual_machine" "template" {
 }
 
 resource "vsphere_virtual_machine" "vm" {
-    #  name             = "terraform-test"
-    name                = "${var.vm_name}"
+    name             = "terraform-test"
+    #name                = "${var.vm_name}"
       resource_pool_id = "${data.vsphere_resource_pool.pool.id}"
-    #  resource_pool_id = "${data.vsphere_compute_cluster.cluster.resource_pool_id}"
       datastore_id     = "${data.vsphere_datastore.datastore.id}"
 
       num_cpus = "${var.vm_cpu}"
