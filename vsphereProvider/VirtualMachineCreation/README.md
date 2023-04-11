@@ -4,7 +4,7 @@
 
 # step2: RUN
 
-*terraform init
-*terraform fmt
-*terraform validate
-*terraform apply -var 'vm_name=1' -var 'vm_cpu=1' -var 'vm_ram=1'
+* terraform init
+* terraform fmt
+* terraform validate
+* terraform apply -var 'vm_name=1' -var 'vm_cpu=1' -var 'vm_ram=1'
