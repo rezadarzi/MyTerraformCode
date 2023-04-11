@@ -44,7 +44,7 @@ data "vsphere_network" "network" {
 }
 
 data "vsphere_virtual_machine" "template" {
-      name          = "TemplateV2_2"
+      name          = "Template Name"
       datacenter_id = "${data.vsphere_datacenter.dc.id}"
 }
 
