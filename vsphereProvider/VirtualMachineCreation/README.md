@@ -1,6 +1,7 @@
 This repo contains Terafform codes to create vitual machine on your vsphere 
 
 step1: clone this repo
+
 step2: RUN
 
 $ terraform init
