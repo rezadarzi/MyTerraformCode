@@ -10,15 +10,15 @@ terraform {
 
 # Configure the Consul provider
 provider "consul" {
-  address    = "192.168.1.124"
-  datacenter = "dc1"
+  address    = "${var.consulAddress}"
+  datacenter = "${var.dc}"
 }
 
 
 # Register external node - rezaTEST
-resource "consul_node" "rezaTEST" {
-  name    = "rezaTEST"
-  address = "localhost"
+resource "consul_node" "nodename" {
+  name    = "${var.nodeName}"
+  address = "${var.nodeAddress}"
 
   meta = {
     "external-node"  = "true"
@@ -27,10 +27,10 @@ resource "consul_node" "rezaTEST" {
 }
 
 # Register service in consul
-resource "consul_service" "rezaTEST" {
-  name          = "rezaTEST"
-  node          = consul_node.rezaTEST.name
-  port          = 8080
+resource "consul_service" "servicename" {
+  name          = "${var.serviceName}"
+  node          = consul_node.nodename.name
+  port          = "${var.portNumber}"
 
     meta = {
     "external-node"  = "true"
