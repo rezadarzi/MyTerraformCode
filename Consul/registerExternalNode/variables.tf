@@ -1,5 +1,5 @@
 variable  "consulAddress"{
-  default =  "192.168.1.124"
+  default =  "x.x.x.x"
 }
 
 variable  "dc"{
