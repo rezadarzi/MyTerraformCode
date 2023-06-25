@@ -1,4 +1,4 @@
-consulAddress	="192.168.1.124"
+consulAddress	="x.x.x.x"
 dc	 	="dc1"
 nodeName	="TestDarziNode"
 nodeAddress	="localhost"
