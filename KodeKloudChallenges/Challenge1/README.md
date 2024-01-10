@@ -1,0 +1,1 @@
+For these challenges, you will start off with deploying a simple webapp on an existing Kubernetes cluster and then move on to more complicated challenges involving provisioning resources and entire infrastructure stacks in the AWS cloud.
